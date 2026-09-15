@@ -25,6 +25,15 @@ $ buzzwordify "fixed a bug in the login page"
 $ buzzwordify "helped my team clean up some code"
 Humbled to announce: I spearheaded my high-performing pod clean up some infrastructure. This is only the beginning. 🙏 #winning #growthmindset #innovation
 
+$ buzzwordify "wrote documentation"
+🔥 Just authored comprehensive technical documentation. Manifesting even bigger wins ahead. #synergy #disruptive #hustle
+
+$ buzzwordify "reviewed a pr"
+Excited to share that I provided strategic technical leadership on a pull request. Onwards and upwards! 💪 #growthmindset #leadership #winning
+
+$ buzzwordify "built an app over the weekend"
+Reflecting on a big milestone: I engineered an ecosystem over the weekend. Grateful, humbled, and hungry for more. #innovation #synergy #grindset
+
 $ buzzwordify "took a nap"
 🔥 Just recharged for peak performance. Manifesting even bigger wins ahead. #buildinpublic #leadership #hustle
 
