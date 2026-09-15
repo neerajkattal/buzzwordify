@@ -13,6 +13,8 @@ You didn't quit your job. You **began an exciting new chapter.**
 
 `buzzwordify` does the emotional labor of personal branding for you, so you don't have to.
 
+![demo](demo.gif)
+
 ## Before / After
 
 ```
