@@ -70,6 +70,16 @@ HASHTAGS = [
 ]
 
 
+# Every template already puts "I" (or an equivalent) in front of {text}, so
+# strip a leading "I" / "I've" / "I'm" / "I was" etc. from the input first to
+# avoid producing "I I fixed a bug".
+_LEADING_I_RE = re.compile(r"^i(?:'m|'ve|'d|'ll)?\s+(?:was\s+|had\s+)?", re.IGNORECASE)
+
+
+def _strip_leading_i(text):
+    return _LEADING_I_RE.sub("", text.strip(), count=1)
+
+
 def _apply(pairs, text):
     for pattern, repl in pairs:
         text = re.sub(pattern, repl, text, flags=re.IGNORECASE)
@@ -87,7 +97,7 @@ def hypeify(text):
 def linkedinify(text, n_hashtags=3, seed=None):
     """Buzzword-substitute a sentence and wrap it in a LinkedIn hustle post."""
     rng = random.Random(seed)
-    hyped = hypeify(text)
+    hyped = hypeify(_strip_leading_i(text))
     template = rng.choice(TEMPLATES)
     n = max(0, min(n_hashtags, len(HASHTAGS)))
     tags = " ".join(rng.sample(HASHTAGS, k=n))
